@@ -2,7 +2,7 @@
 """
 Run Code using this Arguements
 
-python f5.py --mat-path "scrambled_lena.mat" --grid-size 4 --band-width 8 --alpha-ncc 0.4 --alpha-mse 0.6 --use-smart-init --verbose --seed 42
+python Week 4 Puzzle.py --mat-path "scrambled_lena.mat" --grid-size 4 --band-width 8 --alpha-ncc 0.4 --alpha-mse 0.6 --use-smart-init --verbose --seed 42
 
 """
 
