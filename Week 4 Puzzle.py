@@ -1,19 +1,8 @@
 #!/usr/bin/env python3
 """
-sff_final_solver_improved.py
+Run Code using this Arguements
 
-Improved version of the simulated-annealing jigsaw solver with the following
-key changes from the version you posted:
- - Robust edge normalization before NCC/MSE computation.
- - Stronger local refinement (deterministic pair-swap hillclimb with cap).
- - Additional row/column swap move in the SA move-set.
- - Adaptive default band-width (based on piece size) when 0 is passed.
- - Slightly more aggressive reheating and a shorter stagnation window.
- - CLI friendly and reproducible with seed.
-
-Drop this file next to your .mat and run (example):
-python sff_final_solver_improved.py --mat-path "/mnt/data/scrambled_lena (1).mat" \
-    --grid-size 4 --band-width 0 --use-smart-init --verbose --seed 42
+python f5.py --mat-path "scrambled_lena.mat" --grid-size 4 --band-width 8 --alpha-ncc 0.4 --alpha-mse 0.6 --use-smart-init --verbose --seed 42
 
 """
 
@@ -332,3 +321,12 @@ if __name__ == "__main__":
     parser.add_argument("--verbose", action='store_true')
     parser.add_argument("--seed", type=int, default=None)
     main(parser.parse_args())
+
+
+
+
+
+
+
+
+
