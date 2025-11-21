@@ -1,0 +1,88 @@
+"C:\Users\Alpesh Thaker\PycharmProjects\AI Practicals\.venv\Scripts\python.exe" "C:\Users\Alpesh Thaker\PycharmProjects\AI Practicals\Week6.py" 
+Problem 1 — 10x10 associative demo
+
+Pattern 0
+ noise 0.00 -> hamming 0/100
+ noise 0.10 -> hamming 0/100
+ noise 0.20 -> hamming 0/100
+ noise 0.30 -> hamming 0/100
+
+Pattern 1
+ noise 0.00 -> hamming 0/100
+ noise 0.10 -> hamming 0/100
+ noise 0.20 -> hamming 0/100
+ noise 0.30 -> hamming 0/100
+
+Pattern 2
+ noise 0.00 -> hamming 0/100
+ noise 0.10 -> hamming 0/100
+ noise 0.20 -> hamming 0/100
+ noise 0.30 -> hamming 0/100
+
+Pattern 3
+ noise 0.00 -> hamming 0/100
+ noise 0.10 -> hamming 0/100
+ noise 0.20 -> hamming 0/100
+ noise 0.30 -> hamming 0/100
+
+Pattern 4
+ noise 0.00 -> hamming 0/100
+ noise 0.10 -> hamming 0/100
+ noise 0.20 -> hamming 0/100
+ noise 0.30 -> hamming 0/100
+done problem1
+
+Problem 2 — capacity quick test (this may take a while if you increase max_patterns)
+P= 1  recovery_rate=1.000
+P= 2  recovery_rate=1.000
+P= 3  recovery_rate=1.000
+P= 4  recovery_rate=1.000
+P= 5  recovery_rate=1.000
+P= 6  recovery_rate=1.000
+P= 7  recovery_rate=1.000
+P= 8  recovery_rate=1.000
+P= 9  recovery_rate=0.956
+P=10  recovery_rate=1.000
+P=11  recovery_rate=0.927
+P=12  recovery_rate=0.867
+
+Interpretation: recovery_rate close to 1 means good storage.
+Theoretical rule of thumb: P_max ~ 0.138 * N -> ~13 for N=100
+Problem 3 — Error-correcting for P=6
+ noise 0.00 -> success 1.000 (240/240)
+ noise 0.05 -> success 1.000 (240/240)
+ noise 0.10 -> success 1.000 (240/240)
+ noise 0.15 -> success 1.000 (240/240)
+ noise 0.20 -> success 1.000 (240/240)
+ noise 0.25 -> success 0.992 (238/240)
+ noise 0.30 -> success 0.942 (226/240)
+done problem3
+
+Problem 4 — Eight-rook solver (simple Hopfield-like)
+ restart 1: rows_ok=False, cols_ok=False
+ restart 2: rows_ok=False, cols_ok=False
+ restart 3: rows_ok=False, cols_ok=False
+ restart 4: rows_ok=False, cols_ok=False
+ restart 5: rows_ok=False, cols_ok=False
+ restart 6: rows_ok=False, cols_ok=False
+No perfect solution from simple runs. Trying greedy fix.
+ After greedy fix: rows_ok=True, cols_ok=False
+Resulting board:
+[[0 1 0 0 0 0 0 0]
+ [1 0 0 0 0 0 0 0]
+ [1 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 1 0]
+ [0 0 1 0 0 0 0 0]
+ [0 0 0 1 0 0 0 0]
+ [0 0 0 0 1 0 0 0]
+ [0 0 0 0 0 0 0 1]]
+done problem4
+
+Problem 5 — TSP (10 cities) via Hopfield-like updates
+ attempt 7: valid tour found cost=4.1411
+Best tour cost: 4.141126929687865
+Tour (city indices): [0, 8, 2, 3, 7, 4, 6, 5, 1, 9]
+done problem5
+
+
+Process finished with exit code 0
