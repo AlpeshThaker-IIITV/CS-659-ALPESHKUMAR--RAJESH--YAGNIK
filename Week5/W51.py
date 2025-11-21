@@ -48,7 +48,4 @@ def main():
         download_and_save(t)
     print("Done: Week5_1 (download & save).")
 
-
-#if __name__ == "__main__":
 main()
-
