@@ -1,10 +1,4 @@
 # Week5_1.py
-"""
-Part 1: Download historical price data and save clean CSVs.
-Saves files into Data/<TICKER>_full.csv with columns:
-Date, Open, High, Low, Close, Adj Close, Volume
-"""
-
 import os
 import yfinance as yf
 import pandas as pd
@@ -57,3 +51,4 @@ def main():
 
 #if __name__ == "__main__":
 main()
+
